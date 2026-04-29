@@ -1,0 +1,24 @@
+experiment:
+  name: "Evalset Evaluation"
+  run_name: null
+
+cluster:
+  method: hybrid
+  params:
+    topic_cl_thr: 0.3 # tuned on chime9 train
+    overlap_cl_thr: 0.7 # tuned on chime9 train
+
+dataset:
+  name: chime9
+  params: 
+    dataset_path: data-bin/eval-per-word
+    dev_split_dir: ""
+    train_split_dir: ""
+    labels_dir: ""
+    concat_eps: 1.5
+
+evaluation:
+  eval_on_train: true
+  eval_on_dev: true
+  num_threads: 7
+  max_errors: 1

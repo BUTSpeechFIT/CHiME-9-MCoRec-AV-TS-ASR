@@ -1,0 +1,6 @@
+llm:
+  model: "fill_in_your_model"
+  endpoint: "api_url"
+
+mlflow:
+  tracking_uri: "sqlite:///mlflow.db"

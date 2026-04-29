@@ -1,0 +1,22 @@
+experiment:
+  name: "Evalset Evaluation"
+  run_name: null
+
+cluster:
+  method: baseline
+  params:  
+    clustering_threshold: 0.7
+
+dataset:
+  name: chime9
+  params: 
+    dataset_path: data-bin/eval-per-word
+    dev_split_dir: ""
+    train_split_dir: ""
+    labels_dir: ""
+
+evaluation:
+  eval_on_train: false
+  eval_on_dev: true
+  num_threads: 7
+  max_errors: 1
