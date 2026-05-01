@@ -1,0 +1,3 @@
+[submodule "asr_model"]
+	path = asr_model
+	url = https://github.com/BUTSpeechFIT/AV-Parakeet.git
