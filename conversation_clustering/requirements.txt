@@ -1,0 +1,5 @@
+dspy==3.1.0
+mlflow==3.8.1
+numpy==1.26.4
+webvtt-py
+datasets

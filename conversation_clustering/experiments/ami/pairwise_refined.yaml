@@ -1,0 +1,18 @@
+experiment:
+  name: "AMI Evaluation"
+  run_name: null
+
+cluster:
+  method: pairwise_with_refinement
+  params: 
+    clustering_threshold: 0.2
+
+dataset:
+  name: ami
+  params: {}
+
+evaluation:
+  eval_on_train: true
+  eval_on_dev: true
+  num_threads: 7
+  max_errors: 1

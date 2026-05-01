@@ -1,0 +1,20 @@
+experiment:
+  name: "CHiME9 Evaluation"
+  run_name: null
+
+cluster:
+  method: pairwise_with_refinement
+  params: 
+    clustering_threshold: 0.2
+
+dataset:
+  name: chime9
+  params:
+    dev_path: "data-bin/chime9/dev"
+    train_path: "data-bin/chime9/train"
+
+evaluation:
+  eval_on_train: true
+  eval_on_dev: true
+  num_threads: 7
+  max_errors: 1

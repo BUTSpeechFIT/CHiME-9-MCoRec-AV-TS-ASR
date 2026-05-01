@@ -1,0 +1,25 @@
+experiment:
+  name: Example Experiment
+  run_name: Example Run # or null
+
+cluster:
+  method: pairwise # pairwise, pairwise_with_refinement, joint, baseline
+  params: 
+    clustering_threshold: 0.2 # additional parameters passed to the clustering method
+
+dataset:
+  name: chime9 # chime9, ami, experimental
+  params: {}
+
+evaluation:
+  eval_on_train: false
+  eval_on_dev: false
+  num_threads: 7
+  max_errors: 1
+
+llm:
+  model: "fill_in_your_model"
+  endpoint: "api_url"
+
+mlflow:
+  tracking_uri: "http://127.0.0.1:5000"

@@ -1,0 +1,21 @@
+experiment:
+  name: "CHiME9"
+  run_name: null
+
+cluster:
+  method: hybrid
+  params:
+    topic_cl_thr: 0.3 # tuned on chime9 train
+    overlap_cl_thr: 0.7 # tuned on chime9 train
+
+dataset:
+  name: chime9
+  params:
+    dev_path: "data-bin/chime9/dev"
+    train_path: "data-bin/chime9/train"
+
+evaluation:
+  eval_on_train: true
+  eval_on_dev: true
+  num_threads: 7
+  max_errors: 1

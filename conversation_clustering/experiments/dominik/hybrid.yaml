@@ -1,0 +1,22 @@
+experiment:
+  name: "Dominik's Pipeline Evaluation"
+  run_name: null
+
+cluster:
+  method: hybrid
+  params:
+    topic_cl_thr: 0.3 # tuned on chime9 train
+    overlap_cl_thr: 0.7 # tuned on chime9 train
+
+dataset:
+  name: stm
+  params:
+    dev_path: data-bin/dominik/dev/hyp.stm
+    train_path: data-bin/dominik/train/hyp.stm
+    correct_labels_path: data-bin/chime9-old
+
+evaluation:
+  eval_on_train: true
+  eval_on_dev: true
+  num_threads: 7
+  max_errors: 1
